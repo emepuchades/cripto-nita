@@ -6,8 +6,7 @@ import { FaHome, FaWallet, FaBars} from 'react-icons/fa';
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
-    console.log('showMenu', showMenu);
-
+    
   return (
     <>
         <Nav>
