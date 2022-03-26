@@ -17,11 +17,11 @@ const Header = () => {
             <Bars onClick={()=> setShowMenu(!showMenu)}/> 
             <Block id={ showMenu ? "menuBar" : "menuNav"}>
                 <LinkNav href="/" activeStyle>
-                    <FaHome style={{ 'color': "white" }}/>
+                    <FaHome style={{ 'color': "black" }}/>
                     <Text>Inicio</Text>
                 </LinkNav>
                 <LinkNav href="/info" activeStyle>
-                    <FaWallet style={{ 'color': "white" }}/>
+                    <FaWallet style={{ 'color': "black" }}/>
                     <Text>Ver Criptomonedas</Text>
                 </LinkNav>
             </Block>
@@ -34,14 +34,14 @@ const Nav = styled.nav`
     display: flex;
     height: 60px;
     justify-content: space-between;
-    background: #000;
+    background: #fff;
     z-index: 10;
 `;
 
 const LinkNav = styled.a`
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #0d0c22;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
@@ -58,7 +58,7 @@ const BlockLogo = styled.div`
 
 const Text = styled.span`
     text-transform: uppercase;
-    color: white;
+    color: #111111;
     font-size: 15px;
     margin-left: 15px;
 `;
@@ -70,13 +70,13 @@ const Title = styled.h3`
     align-items: center;
     font-size: 20px;
     height: 100%;
-    color: white;
+    color: #0d0c22;
     margin-left: 18px;
 `;
 
  const Bars = styled(FaBars) `
     display: none;
-    color: #ffffff;
+    color: #0d0c22;
 
     @media screen and (max-width: 768px) {
         display: block;
